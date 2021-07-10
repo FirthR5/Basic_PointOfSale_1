@@ -33,13 +33,13 @@ namespace PointOfSale_1
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
-            OpenChildUC(new UC_Products());
+            OpenChildUC(new UC_ProductCategory());
         }
 
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
-            OpenChildUC(new UC_ProductCategory());
+            OpenChildUC(new UC_Products());
 
         }
 
@@ -108,6 +108,37 @@ namespace PointOfSale_1
             SendMessage(this.Handle, 0x112, 0xf012, 0);
 
         }
+
+        private void button_Close(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ButtonMaximized(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonMinimized(object sender, EventArgs e)
+        {
+
+        }
+
+        /*
+            ToDo:
+            -Minimized Button
+            -Maximized Button
+            -Home Button
+            -More colour
+            -rid it of table's lines
+                *Category
+                *Products
+                *Sale's panel
+                    *Add Tax in subtotal panel et do the receipt
+                    *Number buttons
+            -Clear the textboxes
+         
+         */
         //private Form currentChildForm;
     }
 }

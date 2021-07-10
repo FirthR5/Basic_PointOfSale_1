@@ -31,6 +31,25 @@ namespace PointOfSale_1
         {
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.txtBarra = new round();
+            this.btnEnter = new ePOSOne.btnProduct.Button_Round_();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnAceptar = new ePOSOne.btnProduct.Button_Round_();
+            this.lsv_Prod = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtRecibo = new round();
@@ -53,34 +72,15 @@ namespace PointOfSale_1
             this.lblSubtotal1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.txtBarra = new round();
-            this.btnEnter = new ePOSOne.btnProduct.Button_Round_();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btn0 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnAceptar = new ePOSOne.btnProduct.Button_Round_();
-            this.lsv_Cat = new System.Windows.Forms.ListView();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
@@ -102,14 +102,235 @@ namespace PointOfSale_1
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 17);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 38.85017F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 61.14983F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.47038F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.52962F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(818, 574);
             this.tableLayoutPanel1.TabIndex = 68;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.09308F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.90692F));
+            this.tableLayoutPanel2.Controls.Add(this.panel5, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 263);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(812, 308);
+            this.tableLayoutPanel2.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.txtBarra);
+            this.panel5.Controls.Add(this.btnEnter);
+            this.panel5.Controls.Add(this.btnClear);
+            this.panel5.Controls.Add(this.btn3);
+            this.panel5.Controls.Add(this.btn6);
+            this.panel5.Controls.Add(this.btn9);
+            this.panel5.Controls.Add(this.btn0);
+            this.panel5.Controls.Add(this.button1);
+            this.panel5.Controls.Add(this.btn2);
+            this.panel5.Controls.Add(this.btn5);
+            this.panel5.Controls.Add(this.btn8);
+            this.panel5.Controls.Add(this.btn1);
+            this.panel5.Controls.Add(this.btn4);
+            this.panel5.Controls.Add(this.btn7);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(564, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(245, 302);
+            this.panel5.TabIndex = 2;
+            // 
+            // txtBarra
+            // 
+            this.txtBarra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBarra.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBarra.Location = new System.Drawing.Point(34, 33);
+            this.txtBarra.Name = "txtBarra";
+            this.txtBarra.Size = new System.Drawing.Size(170, 31);
+            this.txtBarra.TabIndex = 80;
+            // 
+            // btnEnter
+            // 
+            this.btnEnter.BorderColor = System.Drawing.Color.AntiqueWhite;
+            this.btnEnter.ButtonColor = System.Drawing.Color.SandyBrown;
+            this.btnEnter.FlatAppearance.BorderSize = 0;
+            this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnter.Location = new System.Drawing.Point(45, 70);
+            this.btnEnter.Name = "btnEnter";
+            this.btnEnter.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.btnEnter.OnHoverButtonColor = System.Drawing.Color.Yellow;
+            this.btnEnter.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnEnter.Size = new System.Drawing.Size(159, 40);
+            this.btnEnter.TabIndex = 79;
+            this.btnEnter.Text = "Find product";
+            this.btnEnter.TextColor = System.Drawing.Color.White;
+            this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(164, 254);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(60, 40);
+            this.btnClear.TabIndex = 67;
+            this.btnClear.Text = "C";
+            this.btnClear.UseVisualStyleBackColor = true;
+            // 
+            // btn3
+            // 
+            this.btn3.Location = new System.Drawing.Point(164, 208);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(60, 40);
+            this.btn3.TabIndex = 68;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn6
+            // 
+            this.btn6.Location = new System.Drawing.Point(164, 162);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(60, 40);
+            this.btn6.TabIndex = 69;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn9
+            // 
+            this.btn9.Location = new System.Drawing.Point(164, 116);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(60, 40);
+            this.btn9.TabIndex = 70;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn0
+            // 
+            this.btn0.Location = new System.Drawing.Point(19, 254);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(60, 40);
+            this.btn0.TabIndex = 71;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(94, 254);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 40);
+            this.button1.TabIndex = 72;
+            this.button1.Text = ".";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn2
+            // 
+            this.btn2.Location = new System.Drawing.Point(94, 208);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(60, 40);
+            this.btn2.TabIndex = 73;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn5
+            // 
+            this.btn5.Location = new System.Drawing.Point(94, 162);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(60, 40);
+            this.btn5.TabIndex = 74;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn8
+            // 
+            this.btn8.Location = new System.Drawing.Point(94, 116);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(60, 40);
+            this.btn8.TabIndex = 75;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn1
+            // 
+            this.btn1.Location = new System.Drawing.Point(19, 208);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(60, 40);
+            this.btn1.TabIndex = 76;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn4
+            // 
+            this.btn4.Location = new System.Drawing.Point(19, 162);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(60, 40);
+            this.btn4.TabIndex = 77;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // btn7
+            // 
+            this.btn7.Location = new System.Drawing.Point(19, 116);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(60, 40);
+            this.btn7.TabIndex = 78;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btnNumber);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.lsv_Prod);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(3, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(555, 302);
+            this.panel4.TabIndex = 1;
+            // 
+            // btnAceptar
+            // 
+            this.btnAceptar.BorderColor = System.Drawing.Color.Silver;
+            this.btnAceptar.ButtonColor = System.Drawing.Color.Turquoise;
+            this.btnAceptar.FlatAppearance.BorderSize = 0;
+            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAceptar.Location = new System.Drawing.Point(334, 207);
+            this.btnAceptar.Name = "btnAceptar";
+            this.btnAceptar.OnHoverBorderColor = System.Drawing.Color.Gray;
+            this.btnAceptar.OnHoverButtonColor = System.Drawing.Color.Yellow;
+            this.btnAceptar.OnHoverTextColor = System.Drawing.Color.Gray;
+            this.btnAceptar.Size = new System.Drawing.Size(134, 43);
+            this.btnAceptar.TabIndex = 69;
+            this.btnAceptar.Text = "Done";
+            this.btnAceptar.TextColor = System.Drawing.Color.White;
+            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnDone_Click);
+            // 
+            // lsv_Prod
+            // 
+            this.lsv_Prod.HideSelection = false;
+            this.lsv_Prod.Location = new System.Drawing.Point(17, 33);
+            this.lsv_Prod.Name = "lsv_Prod";
+            this.lsv_Prod.Size = new System.Drawing.Size(518, 247);
+            this.lsv_Prod.TabIndex = 68;
+            this.lsv_Prod.UseCompatibleStateImageBehavior = false;
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnAceptar);
             this.panel1.Controls.Add(this.groupBox4);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox2);
@@ -118,7 +339,7 @@ namespace PointOfSale_1
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(812, 216);
+            this.panel1.Size = new System.Drawing.Size(812, 254);
             this.panel1.TabIndex = 0;
             // 
             // groupBox4
@@ -127,7 +348,7 @@ namespace PointOfSale_1
             this.groupBox4.Controls.Add(this.lblCambio);
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Location = new System.Drawing.Point(596, 54);
+            this.groupBox4.Location = new System.Drawing.Point(596, 48);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(195, 150);
             this.groupBox4.TabIndex = 71;
@@ -179,7 +400,7 @@ namespace PointOfSale_1
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.lblTotal);
             this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Location = new System.Drawing.Point(412, 54);
+            this.groupBox3.Location = new System.Drawing.Point(412, 48);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(168, 150);
             this.groupBox3.TabIndex = 70;
@@ -230,7 +451,7 @@ namespace PointOfSale_1
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.lblSubtotal2);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Location = new System.Drawing.Point(229, 54);
+            this.groupBox2.Location = new System.Drawing.Point(229, 48);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(177, 150);
             this.groupBox2.TabIndex = 70;
@@ -286,7 +507,7 @@ namespace PointOfSale_1
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.lblSubtotal1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(20, 54);
+            this.groupBox1.Location = new System.Drawing.Point(20, 48);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(189, 150);
             this.groupBox1.TabIndex = 69;
@@ -346,214 +567,6 @@ namespace PointOfSale_1
             this.label7.TabIndex = 67;
             this.label7.Text = "Sales\' Panel";
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.09308F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.90692F));
-            this.tableLayoutPanel2.Controls.Add(this.panel5, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.panel4, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 225);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(812, 346);
-            this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.txtBarra);
-            this.panel5.Controls.Add(this.btnEnter);
-            this.panel5.Controls.Add(this.btnClear);
-            this.panel5.Controls.Add(this.btn3);
-            this.panel5.Controls.Add(this.btn6);
-            this.panel5.Controls.Add(this.btn9);
-            this.panel5.Controls.Add(this.btn0);
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Controls.Add(this.btn2);
-            this.panel5.Controls.Add(this.btn5);
-            this.panel5.Controls.Add(this.btn8);
-            this.panel5.Controls.Add(this.btn1);
-            this.panel5.Controls.Add(this.btn4);
-            this.panel5.Controls.Add(this.btn7);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(564, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(245, 340);
-            this.panel5.TabIndex = 2;
-            // 
-            // txtBarra
-            // 
-            this.txtBarra.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBarra.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBarra.Location = new System.Drawing.Point(34, 33);
-            this.txtBarra.Name = "txtBarra";
-            this.txtBarra.Size = new System.Drawing.Size(170, 31);
-            this.txtBarra.TabIndex = 80;
-            // 
-            // btnEnter
-            // 
-            this.btnEnter.BorderColor = System.Drawing.Color.AntiqueWhite;
-            this.btnEnter.ButtonColor = System.Drawing.Color.SandyBrown;
-            this.btnEnter.FlatAppearance.BorderSize = 0;
-            this.btnEnter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.Location = new System.Drawing.Point(45, 70);
-            this.btnEnter.Name = "btnEnter";
-            this.btnEnter.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.btnEnter.OnHoverButtonColor = System.Drawing.Color.Yellow;
-            this.btnEnter.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnEnter.Size = new System.Drawing.Size(159, 40);
-            this.btnEnter.TabIndex = 79;
-            this.btnEnter.Text = "Enter";
-            this.btnEnter.TextColor = System.Drawing.Color.White;
-            this.btnEnter.UseVisualStyleBackColor = true;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(164, 254);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(60, 40);
-            this.btnClear.TabIndex = 67;
-            this.btnClear.Text = "C";
-            this.btnClear.UseVisualStyleBackColor = true;
-            // 
-            // btn3
-            // 
-            this.btn3.Location = new System.Drawing.Point(164, 208);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(60, 40);
-            this.btn3.TabIndex = 68;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
-            // 
-            // btn6
-            // 
-            this.btn6.Location = new System.Drawing.Point(164, 162);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(60, 40);
-            this.btn6.TabIndex = 69;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = true;
-            // 
-            // btn9
-            // 
-            this.btn9.Location = new System.Drawing.Point(164, 116);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(60, 40);
-            this.btn9.TabIndex = 70;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = true;
-            // 
-            // btn0
-            // 
-            this.btn0.Location = new System.Drawing.Point(19, 254);
-            this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(60, 40);
-            this.btn0.TabIndex = 71;
-            this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(94, 254);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 40);
-            this.button1.TabIndex = 72;
-            this.button1.Text = ".";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btn2
-            // 
-            this.btn2.Location = new System.Drawing.Point(94, 208);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(60, 40);
-            this.btn2.TabIndex = 73;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
-            // 
-            // btn5
-            // 
-            this.btn5.Location = new System.Drawing.Point(94, 162);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(60, 40);
-            this.btn5.TabIndex = 74;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = true;
-            // 
-            // btn8
-            // 
-            this.btn8.Location = new System.Drawing.Point(94, 116);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(60, 40);
-            this.btn8.TabIndex = 75;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = true;
-            // 
-            // btn1
-            // 
-            this.btn1.Location = new System.Drawing.Point(19, 208);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(60, 40);
-            this.btn1.TabIndex = 76;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
-            // 
-            // btn4
-            // 
-            this.btn4.Location = new System.Drawing.Point(19, 162);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(60, 40);
-            this.btn4.TabIndex = 77;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = true;
-            // 
-            // btn7
-            // 
-            this.btn7.Location = new System.Drawing.Point(19, 116);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(60, 40);
-            this.btn7.TabIndex = 78;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btnAceptar);
-            this.panel4.Controls.Add(this.lsv_Cat);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(555, 340);
-            this.panel4.TabIndex = 1;
-            // 
-            // btnAceptar
-            // 
-            this.btnAceptar.BorderColor = System.Drawing.Color.Silver;
-            this.btnAceptar.ButtonColor = System.Drawing.Color.Turquoise;
-            this.btnAceptar.FlatAppearance.BorderSize = 0;
-            this.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptar.Location = new System.Drawing.Point(206, 282);
-            this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.btnAceptar.OnHoverButtonColor = System.Drawing.Color.Yellow;
-            this.btnAceptar.OnHoverTextColor = System.Drawing.Color.Gray;
-            this.btnAceptar.Size = new System.Drawing.Size(134, 43);
-            this.btnAceptar.TabIndex = 69;
-            this.btnAceptar.Text = "Done";
-            this.btnAceptar.TextColor = System.Drawing.Color.White;
-            this.btnAceptar.UseVisualStyleBackColor = true;
-            // 
-            // lsv_Cat
-            // 
-            this.lsv_Cat.HideSelection = false;
-            this.lsv_Cat.Location = new System.Drawing.Point(20, 13);
-            this.lsv_Cat.Name = "lsv_Cat";
-            this.lsv_Cat.Size = new System.Drawing.Size(518, 247);
-            this.lsv_Cat.TabIndex = 68;
-            this.lsv_Cat.UseCompatibleStateImageBehavior = false;
-            // 
             // UC_Sales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -563,7 +576,12 @@ namespace PointOfSale_1
             this.Controls.Add(this.label6);
             this.Name = "UC_Sales";
             this.Size = new System.Drawing.Size(821, 591);
+            this.Load += new System.EventHandler(this.UC_Sales_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -574,10 +592,6 @@ namespace PointOfSale_1
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -627,6 +641,6 @@ namespace PointOfSale_1
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Panel panel4;
         private ePOSOne.btnProduct.Button_Round_ btnAceptar;
-        private System.Windows.Forms.ListView lsv_Cat;
+        private System.Windows.Forms.ListView lsv_Prod;
     }
 }

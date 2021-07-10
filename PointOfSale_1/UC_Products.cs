@@ -73,6 +73,8 @@ namespace PointOfSale_1
                 list.SubItems.Add(dr["Price"].ToString());
                 lsv_Prod.Items.Add(list);
             }
+            CustomTable();
+            
         }
         private void ListViewSett()
         {
@@ -81,7 +83,7 @@ namespace PointOfSale_1
             lsv_Prod.Items.Clear();
             lis.Columns.Clear();
             lis.View = View.Details;
-            lis.GridLines = true;
+            lis.GridLines = false;
             lis.FullRowSelect = true;
             lis.Scrollable = true;
             lis.HideSelection = false;
@@ -92,7 +94,14 @@ namespace PointOfSale_1
             lis.Columns.Add("Brand_Name", 100);
             lis.Columns.Add("Quantity", 50);
             lis.Columns.Add("Price", 100);
-
+        }
+        private void CustomTable()
+        {
+            foreach(ListViewItem item in lsv_Prod.Items)
+            {
+                item.BackColor = item.Index % 2 == 0 ? Color.White : Color.WhiteSmoke;
+                item.Font = new System.Drawing.Font("Oxygen", 11);
+            }
         }
         #endregion
         #region CBOs

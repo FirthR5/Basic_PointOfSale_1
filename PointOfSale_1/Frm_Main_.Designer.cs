@@ -30,6 +30,10 @@ namespace PointOfSale_1
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnReport = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
@@ -39,18 +43,62 @@ namespace PointOfSale_1
             this.btnHome = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Indigo;
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1006, 50);
             this.panel1.TabIndex = 1;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(873, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(133, 50);
+            this.panel4.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(4, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(40, 21);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.ButtonMinimized);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(50, 12);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(40, 21);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "O";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.ButtonMaximized);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(96, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(40, 21);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button_Close);
             // 
             // panel2
             // 
@@ -78,7 +126,7 @@ namespace PointOfSale_1
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(150, 54);
             this.btnReport.TabIndex = 6;
-            this.btnReport.Text = "Report";
+            this.btnReport.Text = "Stock";
             this.btnReport.UseVisualStyleBackColor = true;
             this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
             // 
@@ -189,6 +237,8 @@ namespace PointOfSale_1
             this.Name = "Frm_Main_";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main_";
+            this.panel1.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -206,5 +256,9 @@ namespace PointOfSale_1
         private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.Button btnReport;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -100,6 +100,7 @@ namespace PointOfSale_1
                 list.SubItems.Add(dr["Cat_Name"].ToString());
                 lsv_Cat.Items.Add(list);
             }
+            CustomTable();
         }
         private void ListViewSett()
         {
@@ -115,8 +116,15 @@ namespace PointOfSale_1
             lis.HideSelection = false;
             lis.CheckBoxes = true;
 
-            lis.Columns.Add("ID", 100, HorizontalAlignment.Center);
-            lis.Columns.Add("Category Name", 100, HorizontalAlignment.Left);
+            lis.Columns.Add("ID", 50, HorizontalAlignment.Center);
+            lis.Columns.Add("Category Name", 250, HorizontalAlignment.Left);
+        }
+        private void CustomTable()
+        {
+            foreach (ListViewItem item in lsv_Cat.Items) {
+                item.BackColor = item.Index % 2 == 0 ? Color.White : Color.WhiteSmoke;
+                item.Font = new System.Drawing.Font("Oxygen", 11);
+            }
         }
     }
 }

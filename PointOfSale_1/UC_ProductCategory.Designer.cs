@@ -111,13 +111,14 @@ namespace PointOfSale_1
             this.btnDelete.TabIndex = 34;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lsv_Cat
             // 
             this.lsv_Cat.HideSelection = false;
-            this.lsv_Cat.Location = new System.Drawing.Point(22, 128);
+            this.lsv_Cat.Location = new System.Drawing.Point(38, 128);
             this.lsv_Cat.Name = "lsv_Cat";
-            this.lsv_Cat.Size = new System.Drawing.Size(372, 300);
+            this.lsv_Cat.Size = new System.Drawing.Size(350, 300);
             this.lsv_Cat.TabIndex = 33;
             this.lsv_Cat.UseCompatibleStateImageBehavior = false;
             // 
@@ -173,6 +174,7 @@ namespace PointOfSale_1
             this.btnReg.TabIndex = 37;
             this.btnReg.Text = "Save";
             this.btnReg.UseVisualStyleBackColor = false;
+            this.btnReg.Click += new System.EventHandler(this.btnReg_Click);
             // 
             // UC_ProductCategory
             // 

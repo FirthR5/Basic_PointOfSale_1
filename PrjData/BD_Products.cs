@@ -57,15 +57,25 @@ namespace Prj_Data
             {
                 string msg = ex.Message;
             }
+        }
+        public DataTable DB_Stock()
+        {
+            SqlConnection cn = new SqlConnection();
+            try
+            {
+                cn.ConnectionString = Connection1;
+                SqlDataAdapter da = new SqlDataAdapter("Sp_Stock", cn);
+                da.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-            //Sp_RegisterProduct
-            //@Product_Id,
-            //@Category_Id,
-            //@Brand_Id,
-            //@Product_Name,
-            //@Quantity,
-            //@Price
-
+                DataTable data = new DataTable();
+                da.Fill(data);
+                da = null;
+                return data;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
     }
 }

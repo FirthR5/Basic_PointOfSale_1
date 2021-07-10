@@ -58,7 +58,7 @@ namespace PointOfSale_1
             this.lsv_Prod.HideSelection = false;
             this.lsv_Prod.Location = new System.Drawing.Point(238, 97);
             this.lsv_Prod.Name = "lsv_Prod";
-            this.lsv_Prod.Size = new System.Drawing.Size(365, 408);
+            this.lsv_Prod.Size = new System.Drawing.Size(350, 400);
             this.lsv_Prod.TabIndex = 6;
             this.lsv_Prod.UseCompatibleStateImageBehavior = false;
             // 

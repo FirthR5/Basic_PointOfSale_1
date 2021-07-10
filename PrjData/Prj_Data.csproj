@@ -46,6 +46,7 @@
     <Compile Include="BD_Connection.cs" />
     <Compile Include="BD_Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BD_ Sales.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

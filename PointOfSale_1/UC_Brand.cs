@@ -130,13 +130,13 @@ namespace PointOfSale_1
         private void CustomTable()
         {
 
-            lsv_Brand.BackColor = Color.White;
-            for(int i =0; i<lsv_Brand.Items.Count; i++)
-            {
-                if ((i % 2) == 0)
-                    lsv_Brand.Items[i].BackColor = Color.GhostWhite;
-                lsv_Brand.Items[i].Font = new System.Drawing.Font("Oxygen", 10);
-            }
+            //lsv_Brand.BackColor = Color.White;
+            //for(int i =0; i<lsv_Brand.Items.Count; i++)
+            //{
+            //    if ((i % 2) == 0)
+            //        lsv_Brand.Items[i].BackColor = Color.GhostWhite;
+            //    lsv_Brand.Items[i].Font = new System.Drawing.Font("Oxygen", 10);
+            //}
             foreach (ListViewItem item in lsv_Brand.Items)
             {
                 item.BackColor = item.Index % 2 == 0 ? Color.GhostWhite : Color.White;

@@ -4,6 +4,7 @@
 
 
 /*				Brand				*/
+USE SalesPOS
 CREATE PROCEDURE Sp_ViewBrands
 AS
 SELECT * FROM _BRAND
@@ -132,13 +133,48 @@ GO
 /*					PROCEDURE SALES				  */
 /* ====================================================== */
 
-/*
 CREATE PROCEDURE Sp_Sales_Stock
-Products
-ID, NAME,
-BRAND, PRICE,
-CATEGORY
+	AS
+	SELECT Product_Id, Product_Name, Price, Brand_Name, Cat_Name
+	FROM PRODUCT
+	INNER JOIN _CATEGORY
+	ON PRODUCT.Product_Id = _CATEGORY.Id_Cat
+	INNER JOIN _BRAND
+	ON PRODUCT.Brand_Id = _BRAND.Id_Br
+GO
+EXEC Sp_Sales_Stock
+GO
+CREATE VIEW VW_Product
+	AS
+	SELECT Product_Id, Product_Name, Price, Brand_Name, Cat_Name
+	FROM PRODUCT
+	INNER JOIN _CATEGORY
+	ON PRODUCT.Product_Id = _CATEGORY.Id_Cat
+	INNER JOIN _BRAND
+	ON PRODUCT.Brand_Id = _BRAND.Id_Br
+GO
+
+CREATE PROCEDURE Sp_FindProduct(
+	@Product_Id INT 
+	)
+	AS
+	SELECT * from VW_Product 
+	WHERE 
+	Product_Id = @Product_Id
+	ORDER BY Product_Id ASC
+GO
+
+EXEC [dbo].[Sp_FindProduct]
+@Product_Id=1
+GO
+/*
+GO
+GO
+GO
+GO
+GO
 */
+
 
 /*				STOCK				*/
 /*
@@ -146,7 +182,13 @@ NAME OF THE PRODUCT
 ID (NEL)
 STOCK
 */
-
+CREATE PROCEDURE Sp_Stock
+AS
+SELECT Product_Name, Quantity
+FROM PRODUCT
+GO
+EXEC Sp_Stock
+GO
 
 /* ================================= */
 SELECT * FROM _BRAND
@@ -154,3 +196,7 @@ SELECT * FROM _CATEGORY
 SELECT * FROM PRODUCT
 GO
 EXECUTE Sp_ViewProducts
+
+Select * from _BRAND
+
+USE SalesPOS

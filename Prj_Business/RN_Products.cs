@@ -16,6 +16,10 @@ namespace Prj_Business
             BD_Products obj = new BD_Products();
             obj.BD_RegisterProducts(Prod);
         }
-
+        public DataTable RN_Stock()
+        {
+            BD_Products obj = new BD_Products();
+            return obj.DB_Stock();
+        }
     }
 }
