@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace PointOfSale_1
 {
-    public partial class Form1 : Form
+    public partial class UC_Report : UserControl
     {
-        public Form1()
+        public UC_Report()
         {
             InitializeComponent();
         }
+
+        private void brn_refresh_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UC_Report_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        //ID, Stock
     }
 }

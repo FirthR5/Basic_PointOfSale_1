@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace PointOfSale_1
 {
-    public partial class Frm_Products : Form
+    public partial class UC_Products : UserControl
     {
-        public Frm_Products()
+        public UC_Products()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace PointOfSale_1
             RN_Products obj = new RN_Products();
 
             prod.Category_Id = Convert.ToInt32(cboCategory.SelectedValue);
-            prod.   Brand_Id = Convert.ToInt32(cboBrand.SelectedValue);
+            prod.Brand_Id = Convert.ToInt32(cboBrand.SelectedValue);
             prod.Product_Name = txtName.Text;
             prod.Quantity = Convert.ToInt32(txtQuantity.Text);
             prod.Price = Convert.ToDouble(txtPrice.Text);
@@ -35,16 +35,12 @@ namespace PointOfSale_1
             LsvDat();
         }
 
-        
-
-        private void Products_Load(object sender, EventArgs e)
+        private void btnDel_Click(object sender, EventArgs e)
         {
-            LoadBrands();
-            LoadCategories();
-            ListViewSett();
-            LsvDat();
 
         }
+
+
 
         #region Product_Table
         private void LsvDat()
@@ -90,7 +86,7 @@ namespace PointOfSale_1
             lis.Scrollable = true;
             lis.HideSelection = false;
 
-            lis.Columns.Add("Product_Id", 50);  
+            lis.Columns.Add("Product_Id", 50);
             lis.Columns.Add("Product_Name", 100);
             lis.Columns.Add("Cat_Name", 100);
             lis.Columns.Add("Brand_Name", 100);
@@ -107,7 +103,7 @@ namespace PointOfSale_1
                 RN_Category obj = new RN_Category();
                 DataTable da = new DataTable();
                 da = obj.RN_ShowCategories();
-                if(da.Rows.Count > 0)
+                if (da.Rows.Count > 0)
                 {
                     cboCategory.DataSource = da;
                     cboCategory.DisplayMember = "Cat_Name";
@@ -117,7 +113,7 @@ namespace PointOfSale_1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Something went wrong: " +ex.Message);
+                MessageBox.Show("Something went wrong: " + ex.Message);
             }
         }
 
@@ -139,5 +135,13 @@ namespace PointOfSale_1
             catch (Exception ex) { MessageBox.Show("Something went wrong: " + ex.Message); }
         }
         #endregion
+
+        private void UC_Products_Load(object sender, EventArgs e)
+        {
+            LoadBrands();
+            LoadCategories();
+            ListViewSett();
+            LsvDat();
+        }
     }
 }

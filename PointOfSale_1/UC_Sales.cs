@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PointOfSale_1
 {
-    public partial class Frm_Sales : Form
+    public partial class UC_Sales : UserControl
     {
-        public Frm_Sales()
+        public UC_Sales()
         {
             InitializeComponent();
-        }
-
-        private void Sales_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSign_Click(object sender, EventArgs e)
@@ -28,6 +23,11 @@ namespace PointOfSale_1
         }
 
         private void btnDel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
 
         }

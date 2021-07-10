@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prj_Business;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,23 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Prj_Business;
 
 namespace PointOfSale_1
 {
-    public partial class Frm_ProductCategory : Form
+    public partial class UC_ProductCategory : UserControl
     {
-        public Frm_ProductCategory()
+        public UC_ProductCategory()
         {
             InitializeComponent();
         }
 
-        private void ProductCategory_Load(object sender, EventArgs e)
+        private void UC_ProductCategory_Load(object sender, EventArgs e)
         {
             ListViewSett();
             LsvData();
         }
-
         private void btnReg_Click(object sender, EventArgs e)
         {
             RN_Category obj = new RN_Category();
@@ -51,21 +50,21 @@ namespace PointOfSale_1
             {
                 int x = lsv_Cat.CheckedIndices.Count;
                 string[] xd = new string[x];
-                for (int i = lsv_Cat.CheckedIndices.Count - 1; i >=0; i--)
+                for (int i = lsv_Cat.CheckedIndices.Count - 1; i >= 0; i--)
                 {
                     var lisw = lsv_Cat.CheckedIndices[i];
                     xd[i] = lisw.ToString();
                 }
 
-                for (int o = lsv_Cat.CheckedIndices.Count-1; o >=0; o--)
+                for (int o = lsv_Cat.CheckedIndices.Count - 1; o >= 0; o--)
                 {
-                    for (int i = 0; i< lsv_Cat.Items.Count; i++)
+                    for (int i = 0; i < lsv_Cat.Items.Count; i++)
                     {
                         if (lsv_Cat.Items[i].Index == Convert.ToInt32(xd[o]))
                         {
                             var lis = lsv_Cat.Items[i];
                             int id = Convert.ToInt32(lis.SubItems[0].Text);
-                            
+
                             obj.RN_RemoveCategory(id);
                         }
                     }
